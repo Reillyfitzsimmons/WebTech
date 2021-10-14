@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habits For a Better Life</title>
+    <title>Contact Me</title>
     <style>
   h1{text-align: center;}
 
@@ -110,67 +110,82 @@ h1 {
     </style>
 </head>
 <body>
-    <h1>Meditation</h1>
-
-<!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
+    <h1>Contact Me</h1>
     <nav>
       <a href="index.htm">Home</a>
       <a href="aboutme.htm">About Me</a>
       <a href="contactme.html">Contact</a>
-      <div class="animation start-home"></div>
+      <div class="animation start-blog"></div>
     </nav>
 
-    <img style="float: left; margin-left: 40pt; margin-top: 70pt;" src="stress.png" alt="icon of stressed woman" width="400">
-<p style="margin-top: 70pt;">
-  
-  Did you know that "long-term, consistent meditation can increase resiliency to stress"?
-</p>
-<p>
-  According to a study by researchers, long term meditators:
-  <ul style="margin-left: 400pt; margin-right: 300pt; font-size: 18pt;">
-  <li>
-  Had smaller cortisol and flare responses relative to non-meditators.
-  <ul>
-      <li>Cortisol is "natures built-in alarm system" alerting us of possible stress</li>
-    </ul>
-  </li>
     
-  <li>
-  Perceived the TSST as less stressful than non-meditators.
-  <ul>
-      <li>TSST= Trier Social Stress Test</li>
-    </ul>
-  </li>
-  <li>
-  Showed closer alignment between measured and perceived stress responses.
 
-  </li>
+</style>
 
-</ul>
+</head>
 
+<body>
+<h1>MIS3690 Student Survey</h1>
+<p>Please complete the following survey. You must answer each question. When you are done,
+    please click on the Submit button.</p>
+<form action = "mailer.php" method="post">
 
-</p>
+    <p>
+        First name: <input type="text" name="First Name:" maxlength="100" />
+        Last Name: <input type="text" name="Last Name:" maxlength="100" />
+    </p>
 
+    <p>
+        Gender: Male <input type="radio" name="Gender" value="Male" />
+        Female <input type="radio" name="Gender" value="Female" />
+    </p>
+
+    <p>
+        What grade do you expect to receive: <select name="D1">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+    </p>
+    <p>
+    <table>
+        <tr>
+            <td rowspan="4">Which topics do you find to be fun?</td>
+            <td><input type="checkbox">Images</td>
+        </tr>
+        <tr>
+            <td> <input type="checkbox">CSS</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">Tables</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">Forms</td>
+        </tr>
+    </table>
+    </p>
+
+    <p>
+        Please add any comments you have
+    </p>
+    <p><textarea name="comments" rows="5" cols="35"></textarea></p>
 
     <table>
-      <tr>
-        <td style="text-align: center; font-size: 18pt;" colspan="3">
-        A few podcasts on meditation:
-      </td>
-      </tr>
-      <tr>
-        <td>
-      <iframe src="https://open.spotify.com/embed/episode/65gZSDZOs2CoARegzUaS3k?theme=0&amp;t=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>   
-    </td>
-    <td>
-      <iframe src="https://open.spotify.com/embed/episode/5lFdx6qUmtc1UXphjEbsqo?theme=0&amp;t=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </td>
-    <td>
-      <iframe src="https://open.spotify.com/embed/episode/02XTfEdkwdwNKzovBySGwo?theme=0&amp;t=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </td>
-
-    </tr>
+        <tr>
+            <td><input type="submit" value="Submit" name="Submit"></td>
+            <td><input type="reset" value="Reset" name="Reset"></td>
+        </tr>
     </table>
+
+
+
+</form>
+
+
+
+
 
 </body>
 </html>
