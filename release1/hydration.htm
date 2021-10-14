@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--The unordered list can be found on the meditation page-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,28 @@
     <style>
         h1{text-align: center;}
         
+        .rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.rotate40 {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.rotate250 {
+    -webkit-transform: rotate(250deg);
+    -moz-transform: rotate(250deg);
+    -o-transform: rotate(250deg);
+    -ms-transform: rotate(250deg);
+    transform: rotate(250deg);
+}
 
 nav {
   margin: 27px auto 0;
@@ -70,8 +91,8 @@ nav .start-blog, a:nth-child(3):hover~.animation {
 
 body {
   font-size: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #8e9fb1;
+  font-family: sans-serif;
+  background: #2c3e50;
 }
 h1 {
   text-align: center;
@@ -80,13 +101,13 @@ h1 {
   font-size: 30px;
   color: #ecf0f1;
   text-shadow: 2px 2px 4px #000000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cherry Swash', cursive;
 }
 
     p{ text-align: center;
         margin: 40px 200px 40px 200px;
-        font-family: 'Segoe UI';
-        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: cornsilk;
         font-size: 20pt;
     }
 
@@ -98,7 +119,7 @@ h1 {
     </style>
 </head>
 <body>
-    <h1>The Room of Habbits</h1>
+    <h1>Choose Today</h1>
 
 <!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
     <nav>
@@ -112,9 +133,9 @@ h1 {
 
     <p> 
     "It can take anywhere from 3 days to 2 months or even longer to form a habbit"(<a href="#anchor1">source</a>).
-    Browse through the home page to look at common habits you might want to learn about.
+    Browse through the home page to look at common habits people want to form. 
 </p>
-<p>  (hint: click on anything that has an arrow)
+<p>  (hint: click on anything that animates when you scroll over it)
 </p>
 
 <div>
@@ -124,18 +145,23 @@ h1 {
 
 
 
-<a href="sleep.htm"><img style="position: absolute; top: 620px; left: 75px ;" src="bed1.png" alt="icon of a bed" width="500" > </a>
+<img style="position: absolute; top: 710px; left: 100px ;" src="bed.png" alt="icon of a bed" width="300">
+<img style="position: absolute; top: 620px; left: 100px ;" src="right-drawn-arrow.png" alt="right-drawn-arrow" width="100" class="rotate90">
 
-<a href="meditation.htm"><img style="position: absolute; top: 490px; left: 190px ;" src="meditation1.png" alt="man meditating" width="380" ></a>
+<img style="position: absolute; top: 650px; left: 170px ;" src="meditation.png" alt="man meditating" width="180">
 
-<a href="exercise.htm"><img style="position: absolute; top: 630px; right: 75px ;" src="barbell1.png" alt="barbell" width="350"></a>
+<img style="position: absolute; top: 780px; right: 100px ;" src="barbell.png" alt="barbell" width="200">
 
-<a href="hydration.htm"><img style="position: absolute; top: 755px; right: 100px ;" src="water-bottle1.png" alt="icon of water bottle" width="400"></a>
+<img style="position: absolute; top: 910px; right: 300px ;" src="water-bottle.png" alt="icon of water bottle" width="70">
 
-<img style="position: absolute; top: 530px; left: 500px ;" src="deskandfood1.png" alt="icon of a desk" width="450">
+
+<img style="position: absolute; top: 690px; left: 600px ;" src="desk.png" alt="icon of a desk" width="300">
 
 <img style="position: absolute; top: 500px; left: 950px ;" src="window.png" alt="icon of window" width="200">
+<img src="right-drawn-arrow.png" alt="right-drawn-arrow" width="100" class="rotate90">
 
+<img style="position: absolute; top: 775px; left: 610px ;" src="diet.png" alt="icon of healthy food" width="75">
+<img src="right-drawn-arrow.png" alt="right-drawn-arrow" width="100" class="rotate90">
 
 </div>
 <br>
@@ -159,6 +185,7 @@ h1 {
 
 <br>
 
+<div style="text-align: center;">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 </body>
 </html>
