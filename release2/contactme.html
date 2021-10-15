@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+  h1{text-align: center;}
+
+
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 310px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+
+
+body {
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(#e66465, #9198e5);
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    p{ text-align: center;
+        margin: 40px 200px 40px 200px;
+        font-family: 'Segoe UI';
+        color: black;
+        font-size: 20pt;
+    }
+
+    table {
+    
+            width: 100%;
+            border: 0px solid black;
+            padding-top: 50pt;
+            padding-bottom: 30pt;
+            padding-left: 50pt;
+            padding-right: 50pt;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+            text-align: justify;
+            line-height: 1.2;
+              width: 30%;}
+div.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+      
+
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contactme.html">Contact</a>
+      <div class="animation start-blog"></div>
+    </nav>
+
+  
+
+
+
+<p style="width: 300pt;margin-top: 90pt; text-align: center;">I am always happy to connect with you. Whether it's to ask about specific scientific ideologies around habits, or just to say hello.</p>
+<form action = "mailer.php" method="post">
+
+    <p style="width: 300pt; text-align: center;">
+        First name: <input type="text" name="First Name:" maxlength="80" />
+        </p>
+        <p style="width: 300pt; text-align: center;">
+        Last Name: <input type="text" name="Last Name:" maxlength="80" />
+    </p>
+
+    <p style="width: 300pt; text-align: center;">
+        Have you begun your journey to self improvement yet? </p>
+        <p style="width: 300pt; text-align: center;">
+        Yes <input type="radio" name="progress" value="Yes" />
+        Not yet <input type="radio" name="progress" value="No" />
+    </p>
+
+    <p style="width: 300pt; text-align: center;">
+        Which habit do you most want to form:  <select name="D1">
+            <option value="A">Exercise</option>
+            <option value="B">Healthy Eating</option>
+            <option value="C">Hydration</option>
+            <option value="D">Meditation</option>
+            <option value="F">School</option>
+            <option value="F">Sleep</option>
+        </select>
+    </p>
+    <p style="width: 300pt; text-align: center;" >
+        What would you like to talk about?
+    </p>
+    <p style="width: 300pt; text-align: center;"><textarea name="comments" rows="5" cols="35"></textarea></p>
+
+    <p  style="width: 300pt; text-align: center;">
+            <input type="submit" value="Submit" name="Submit">
+            <input type="reset" value="Reset" name="Reset">
+        </p>
+        
+
+
+</form>
+
+
+
+<img style="position: absolute; top: 220px; left: 160px;z-index:-5; margin-bottom: 30pt;" src="square.png" alt="rectangle" width="500">
+
+<img style="position: absolute; top: 210px; left: 800px" src="business-card.png" alt="business card icon">
+
+</body>
+</html>

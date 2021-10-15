@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habits For a Better Life</title>
+    <style>
+  h1{text-align: center;}
+
+
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 310px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+
+
+body {
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(#e66465, #9198e5);
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    p{ text-align: justify;
+        margin: 40px 75px 40px 100px;
+        font-family: 'Segoe UI';
+        color: black;
+        font-size: 20pt;
+        width: 500pt;
+    }
+
+    table {
+    
+            width: 100%;
+            border: 0px solid black;
+            padding-top: 50pt;
+            padding-bottom: 30pt;
+            padding-left: 50pt;
+            padding-right: 50pt;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+            text-align: justify;
+            line-height: 1.2;
+              width: 30%;}
+      
+
+    </style>
+</head>
+<body>
+    <h1>The Plan</h1>
+
+<!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contactme.html">Contact</a>
+      <div class="animation start-homes"></div>
+    </nav>
+
+   <p>How do you start?</p>
+
+   <p style="float: left;">
+You have already taken the first step of your journey. By reading this web page, you have decided that you want to change in some way or another. Whether it's to stop a bad habit like picking your nails and fingers, or start a good one like drinking a bottle of water every morning, you have already begun and I am proud of you.   
+
+   </p>
+<img style="float: right; margin-right: 100pt;" width="500" src="quality.png" alt="golad medal">
+   <p>The next thing we need to do is set a goal. How do you find the goal you really want? You habe to think about it. It seems very obvious, but often times we say we have a goal (to get jacked for example) but we don't think about why. After we lose that "why," our motivation can drop off and we lose steam. So thinking hard about what your goal is and why is very important. I personally use a pen and paper to write down my goals.</p>
+   <p>
+     The next thing you should think about is one goal you really want to nail down and focus on that for two weeks. If you try to stop all of your bad habits and start all of your good ones at the same time, you might be setting yourself up for failure, and falure is okay, but we want to just focus on one for two weeks. Then after two weeks, we can add another habbit which we will work on for two weeks while also doing the first habit we changed, and so on, until you are meeting the goals you set today.
+   </p>
+
+   <p>
+     This podcast walks you through how to set goals and make incremental changes to your daily hbaits in order to achieve them:
+   </p>
+   <p><iframe src="https://open.spotify.com/embed/episode/2LMn6Od8lTZbOSptM35gzf" width="670" height="232"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>
+
+</body>
+</html>

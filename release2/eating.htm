@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Eating</title>
+    <style>
+  h1{text-align: center;}
+
+
+nav {
+  margin: 27px auto 0;
+
+  position: relative;
+  width: 310px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+
+
+body {
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(#e66465, #9198e5);
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    p{ text-align: center;
+        margin: 40px 200px 40px 200px;
+        font-family: 'Segoe UI';
+        color: black;
+        font-size: 20pt;
+    }
+
+    table {
+    
+            width: 100%;
+            border: 0px solid black;
+            padding-top: 50pt;
+            padding-bottom: 30pt;
+            padding-left: 50pt;
+            padding-right: 50pt;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+            text-align: justify;
+            line-height: 1.2;
+              width: 30%;}
+      
+
+    </style>
+</head>
+<body>
+    <h1>Healthy Eating</h1>
+
+<!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="aboutme.htm">About Me</a>
+      <a href="contactme.html">Contact</a>
+      <div class="animation start-homes"></div>
+    </nav>
+   
+
+
+    <p><iframe src="https://open.spotify.com/embed/episode/3ZnPhmvXy6dBpBrG0fqB7t?theme=0" width="1100" height="232" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>
+  <p style="text-align: justify;"> 
+    Dr. Uma Naidoo said it best when she described the relationship between what we eat and how we feel as a one of a kind relationship.
+    It is understood that the "Gut Microbiom" plays an extremely important role in how good (or bad) we feel. When we eat good foods, 
+    our gut sends good messages to our brain and makes us feel good. When we eat unhealthy like McDonalds, Doritos, and other similar foods, 
+    a toxicity is created and our gut sends bad signlas to our brain. Unfortunately, it is the sugar, flavor, and other good tasting things that
+    brands like McDonalds use that make it so hard for us to stop eating (despite the bad feeling we get afterwards).
+      </p>
+<p style="text-align: justify;"> Listen to the podcast with Dr. Uma Naidoo for a more in depth lesson on the importance of food and how you can start eating healthier today.</p>
+</body>
+</html>
