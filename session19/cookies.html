@@ -21,21 +21,12 @@ document.cookie = cName + "=" + cValue +
 ";expires="+ expireDate.toGMTString() 
 }
 
-function readCookie(lastVisit)
-{
-c=document.cookie  //Gets all cookies in the document
-var s=c.indexOf(cName) //s is the index of the start of the desired cookie
-if (s==-1) return null;
-var cs=c.substring(s) //Cut the cookie string at the start of the desired cookie
-var e=cs.indexOf(";") //e is the index of the end of the desired cookie
-//If there are multiple cookies, cut off the others
-if (e != -1) {
-cs = cs.substring(0,e)
-}
-//Find and return the value of the desired cookie
-cookieParts=cs.split("=")
-return cookieParts[1]
-}
+function lastDate()
+	{
+		var showDate=document.getElementById("showlastdate").value
+		setCookie("lastdate", showDate);
+	
+	}
 
 
 
