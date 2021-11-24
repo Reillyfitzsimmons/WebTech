@@ -5,7 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <script src="/path/to/gradientFade.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/path/to/gradientFade.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+
+    //By using jQuery
+    
+
+      
+    $(window).bind('beforeunload', function () {
+        return 'please save your setting before leaving the page.';
+    });
+
+function validateForm() {
+  let x = document.forms("fname").value;
+  if (x == "") {
+    alert("First name must be filled out");
+    return false;
+  }
+}
+
+
+
+    </script>
     <style>
+     
+
+    
   h1{text-align: center;}
 
 
@@ -114,8 +143,11 @@ div.card {
       
 
     </style>
+    
 </head>
 <body>
+
+  
     <h1>Contact Me</h1>
     <nav>
       <a href="index.htm">Home</a>
@@ -132,7 +164,7 @@ div.card {
 <form action = "mailer.php" method="post">
 
     <p style="width: 300pt; text-align: center;">
-        First name: <input type="text" name="First Name:" maxlength="80" />
+        First name: <input type="text" id="fname" name="First Name:" maxlength="80" />
         </p>
         <p style="width: 300pt; text-align: center;">
         Last Name: <input type="text" name="Last Name:" maxlength="80" />
@@ -161,7 +193,7 @@ div.card {
     <p style="width: 300pt; text-align: center;"><textarea name="comments" rows="5" cols="35"></textarea></p>
 
     <p  style="width: 300pt; text-align: center;">
-            <input type="submit" value="Submit" name="Submit">
+            <input onclick="validateForm()" type="submit" value="Submit" name="Submit">
             <input type="reset" value="Reset" name="Reset">
         </p>
         
@@ -174,6 +206,9 @@ div.card {
 <img style="position: absolute; top: 220px; left: 160px;z-index:-5; margin-bottom: 30pt;" src="square.png" alt="rectangle" width="500">
 
 <img style="position: absolute; top: 210px; left: 800px" src="business-card.png" alt="business card icon">
+
+
+</div>
 
 </body>
 </html>

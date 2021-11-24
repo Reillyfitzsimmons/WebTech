@@ -5,6 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habits For a Better Life</title>
+
+    <script>
+
+      function ChgImage()
+      {
+        document.getElementById("firstpicture").src="Charlie.jpg";
+      }
+      function ChgImageBack()
+      {
+        document.getElementById("firstpicture").src="Me.png";
+      }
+  
+      function ChgText()
+      {
+        document.getElementById("body1").innerHTML="Hello, my name is Charlie. I also go by Charles, Sir Charles, or Chuck. I am Reilly's brother and I enjoy going for walks, being outside, and wearing cool hats. ";
+      }
+      function ChgTextBack()
+      {
+        document.getElementById("body1").innerHTML="Hey! I'm Reilly, the creator of this website. I am a student at Babson College and I have recently started my journey of personal growth. Because I'm a senior now, it means I have to figure out what I'm going to do with my life. Sales, marketing, and finance are all interests of mine, but I need to pin down what I'm going to do for the next few years.";
+      }
+  
+    </script>
+
+
+
     <style>
   h1{text-align: center;}
 
@@ -120,11 +145,11 @@ h1 {
 
     
 
-    <img style="margin: 100pt;margin-left:150pt ;margin-right: 40pt; float: left;" src="me.png" alt="image of me" width="400">
+    <img id="firstpicture" onmouseover="ChgImage(), ChgText()" onmouseout="ChgImageBack(), ChgTextBack()" style="margin: 100pt;margin-left:150pt ;margin-right: 40pt; float: left;" src="me.png" alt="image of me" width="400">
 
     
 
-    <p style="margin-top: 100pt; margin-right: 100pt; text-align: justify;">
+    <p id="body1" style="margin-top: 100pt; margin-right: 100pt; text-align: justify;">
 
 Hey! I'm Reilly, the creator of this website. I am a student at Babson College and I have recently started my journey of personal growth. Because I'm a senior now, it means I have to figure out what I'm going to do with my life. Sales, marketing, and finance are all interests of mine, but I need to pin down what I'm going to do for the next few years. 
     </p>
@@ -133,7 +158,7 @@ Hey! I'm Reilly, the creator of this website. I am a student at Babson College a
 My journey started with Tom Brady's fitness brand (TB12) podcast called the Keep Going Podcast. It motivated me to start changing small habits each day in order to achieve bigger and better things as time goes on. It was investment in my development which I am still trying to benefit from every day. Some days it's hard, but some days all I want to do is go for a run, eat healthy and stay hydrated.
 </p>
 <p style="margin-right: 100pt; text-align: justify;">
-  I hope you find this site useful and inspiring. Feel free to contact me if you have any questions. Have a wonderful day.
+  I hope you find this site useful and inspiring. Feel free to contact me if you have any questions. Have a wonderful day. Also, meet my dog, Charlie, by hovering over my profile picture.
   </p>
 
 

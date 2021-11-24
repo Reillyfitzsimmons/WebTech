@@ -5,7 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy Eating</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		var imageList = new Array("fruit.jpg","dinner.jpg","veggies.jpg")  
+		var counter= 0 
+		var ontop = 1; 
+		function playSlideShow()
+		 {
+		 	counter = counter+1	
+			if (counter == imageList.length)  
+			{
+				counter=0
+			}
+
+			if (ontop == 1) 
+			{
+				$("#image1").fadeTo(3000,0);
+                document.getElementById("image2").src=imageList[counter];
+				$("#image2").fadeTo(3000,1);
+				ontop = 2;
+			}
+			else
+			{
+				$("#image2").fadeTo(3000,0);
+                document.getElementById("image1").src=imageList[counter];
+				$("#image1").fadeTo(3000,1);
+				ontop = 1;
+			}
+			setTimeout("playSlideShow();",5000)
+		}
+		
+
+    </script>
+
+
     <style>
+
+img {width:600px; height:400px; position:absolute; top:950px; left:500px}
+		#image1 {opacity:1.0; }
+		#image2 {opacity:0.0; }
+
   h1{text-align: center;}
 
 
@@ -109,7 +150,7 @@ h1 {
 
     </style>
 </head>
-<body>
+<body onload="playSlideShow()">
     <h1>Healthy Eating</h1>
 
 <!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
@@ -131,5 +172,11 @@ h1 {
     brands like McDonalds use that make it so hard for us to stop eating (despite the bad feeling we get afterwards).
       </p>
 <p style="text-align: justify;"> Listen to the podcast with Dr. Uma Naidoo for a more in depth lesson on the importance of food and how you can start eating healthier today.</p>
+
+<img src="fruit.jpg" alt="Sedona" id="image1" />
+<img src="dinner.jpg" alt="Sedona" id="image2" />
+<br>
+<br>
+
 </body>
 </html>

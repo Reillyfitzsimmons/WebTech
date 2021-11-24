@@ -5,24 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habits For a Better Life</title>
-<script>
-
-var phraseList = new Array("hard", "stressfull", "overwhelming", "demoralizing", "boring")
-		var bgcList = new Array("white", "black", "red", "silver")   //Colors of the background
-		var txtColorList = new Array("black","white", "yellow", "blue")  //Colors of the text
-	   function playCoolSayings()
-	   {
-			var myp = document.getElementById("phrase1")
-			var counter = Math.floor(Math.random()*(phraseList.length))
-			var colorCounter = Math.floor(Math.random()*(bgcList.length))
-			myp.innerHTML=phraseList[counter]
-	
-			setTimeout("playCoolSayings()",1500)  // This starts the function again in 4 seconds
-	   }
-
-</script>
-
-
     <style>
   h1{text-align: center;}
 
@@ -128,7 +110,7 @@ h1 {
 
     </style>
 </head>
-<body onload="playCoolSayings();">
+<body>
     <h1>School</h1>
 
 <!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
@@ -139,7 +121,7 @@ h1 {
       <div class="animation start-homes"></div>
     </nav>
 
-   <p>School is <span id="phrase1">hard</span>. Here are some personal tips you can use to create better study habits:
+   <p>School is hard. Studying is hard. Life is hard. Here are some personal tips you can use to create better study habits:
      <ol style="margin-left: 100pt; font-size: 20pt;">
        <li>Create a schedule</li>
        <li>Start a study group</li>

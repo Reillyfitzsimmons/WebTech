@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habits For a Better Life</title>
-<script>
-
-var phraseList = new Array("hard", "stressfull", "overwhelming", "demoralizing", "boring")
-		var bgcList = new Array("white", "black", "red", "silver")   //Colors of the background
-		var txtColorList = new Array("black","white", "yellow", "blue")  //Colors of the text
-	   function playCoolSayings()
-	   {
-			var myp = document.getElementById("phrase1")
-			var counter = Math.floor(Math.random()*(phraseList.length))
-			var colorCounter = Math.floor(Math.random()*(bgcList.length))
-			myp.innerHTML=phraseList[counter]
-	
-			setTimeout("playCoolSayings()",1500)  // This starts the function again in 4 seconds
-	   }
-
-</script>
-
-
+    <title>Contact Me</title>
     <style>
   h1{text-align: center;}
 
@@ -101,12 +83,11 @@ h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-    p{ text-align: justify;
-        margin: 40px 75px 40px 100px;
+    p{ text-align: center;
+        margin: 40px 200px 40px 200px;
         font-family: 'Segoe UI';
         color: black;
         font-size: 20pt;
-        width: 500pt;
     }
 
     table {
@@ -124,36 +105,75 @@ h1 {
             text-align: justify;
             line-height: 1.2;
               width: 30%;}
+div.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
       
 
     </style>
 </head>
-<body onload="playCoolSayings();">
-    <h1>School</h1>
-
-<!--Navigation bar from https://www.sliderrevolution.com/resources/css-menu/ modified by me-->
+<body>
+    <h1>Contact Me</h1>
     <nav>
       <a href="index.htm">Home</a>
       <a href="aboutme.htm">About Me</a>
       <a href="contactme.html">Contact</a>
-      <div class="animation start-homes"></div>
+      <div class="animation start-blog"></div>
     </nav>
 
-   <p>School is <span id="phrase1">hard</span>. Here are some personal tips you can use to create better study habits:
-     <ol style="margin-left: 100pt; font-size: 20pt;">
-       <li>Create a schedule</li>
-       <li>Start a study group</li>
-       <li>Find your study spot</li>
-       <li>Keep track of deadlines</li>
-       <li>Spread it out</li>
+  
 
-     </ol>
 
-   <p style="float: left;">By doing these things, you can be sure that you are getting the most out of your learning experience. Afterall, the point of school is to learn.</p>
 
-<p>Here are some more tips you can use to get ahead in school:
-<img style="position: absolute; top: 200pt; right: 100pt;" src="desk.png" alt="icon of desk">
-</p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/p60rN9JEapg" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p style="width: 300pt;margin-top: 90pt; text-align: center;">I am always happy to connect with you. Whether it's to ask about specific scientific ideologies around habits, or just to say hello.</p>
+<form action = "mailer.php" method="post">
+
+    <p style="width: 300pt; text-align: center;">
+        First name: <input type="text" name="First Name:" maxlength="80" />
+        </p>
+        <p style="width: 300pt; text-align: center;">
+        Last Name: <input type="text" name="Last Name:" maxlength="80" />
+    </p>
+
+    <p style="width: 300pt; text-align: center;">
+        Have you begun your journey to self improvement yet? </p>
+        <p style="width: 300pt; text-align: center;">
+        Yes <input type="radio" name="progress" value="Yes" />
+        Not yet <input type="radio" name="progress" value="No" />
+    </p>
+
+    <p style="width: 300pt; text-align: center;">
+        Which habit do you most want to form:  <select name="D1">
+            <option value="A">Exercise</option>
+            <option value="B">Healthy Eating</option>
+            <option value="C">Hydration</option>
+            <option value="D">Meditation</option>
+            <option value="F">School</option>
+            <option value="F">Sleep</option>
+        </select>
+    </p>
+    <p style="width: 300pt; text-align: center;" >
+        What would you like to talk about?
+    </p>
+    <p style="width: 300pt; text-align: center;"><textarea name="comments" rows="5" cols="35"></textarea></p>
+
+    <p  style="width: 300pt; text-align: center;">
+            <input type="submit" value="Submit" name="Submit">
+            <input type="reset" value="Reset" name="Reset">
+        </p>
+        
+
+
+</form>
+
+
+
+<img style="position: absolute; top: 220px; left: 160px;z-index:-5; margin-bottom: 30pt;" src="square.png" alt="rectangle" width="500">
+
+<img style="position: absolute; top: 210px; left: 800px" src="business-card.png" alt="business card icon">
+
 </body>
 </html>
